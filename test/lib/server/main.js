@@ -381,13 +381,3 @@ test("Get odata from Northwind destination",
 		});
 	});
 
-test("Get odata from SAPDevCenter destination",
-	(t) => {
-		return request.get("/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/$metadata").then((res) => {
-			if (res.error) {
-				t.fail(res.error.text);
-			}
-			t.deepEqual(res.statusCode, 200, "Correct HTTP status code");
-			t.regex(res.headers["content-type"], /xml/, "Correct content type");
-		});
-	});
