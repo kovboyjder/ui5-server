@@ -7,14 +7,6 @@
           "name": "northwind",
           "entryPath": "/"
         }
-      },
-      {
-        "path": "/sap/opu/odata/",
-        "target": {
-          "type": "destination",
-          "name": "sapdevcenter",
-          "entryPath": "/sap/opu/odata/"
-        }
       }
     ]
   }
